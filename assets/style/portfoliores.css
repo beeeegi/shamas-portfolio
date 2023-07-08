@@ -380,7 +380,7 @@
     }
     .right-side_c {
         position: absolute;
-        left: 240px;
+        left: 270px;
     }
     .left-side_social-links {
         position: absolute;
@@ -527,6 +527,21 @@
     footer {
         position: absolute;
         width: 393px;
+    }
+    .right-side_c {
+        position: absolute;
+        left: 240px;
+    }
+    .left-side_social-links {
+        position: absolute;
+        width: 140px;
+
+        font-size: 20px;
+
+        gap: 6px;
+        left: 0%;
+
+        display: flex;
     }
 }
 
