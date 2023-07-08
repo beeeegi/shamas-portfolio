@@ -528,21 +528,6 @@
         position: absolute;
         width: 393px;
     }
-    .right-side_c {
-        position: absolute;
-        left: 240px;
-    }
-    .left-side_social-links {
-        position: absolute;
-        width: 140px;
-
-        font-size: 20px;
-
-        gap: 6px;
-        left: 0%;
-
-        display: flex;
-    }
 }
 
 @media screen and (max-width: 390px) and (max-height: 1280px){
