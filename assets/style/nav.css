@@ -6,7 +6,7 @@ nav {
 
     transform: translate(0.3s);
     transition: 0.3s;
-    background-color: rgb(36, 36, 36);
+    background-color: #000000;
 }
 
 ul {
@@ -140,7 +140,7 @@ input[type="checkbox"]:checked ~ footer {
     }
     li {
         margin-top: 50px;
-        font-size: 60px;
+        font-size: 30px;
         text-align: center;
         color: white;
         left: -350px;

@@ -144,6 +144,10 @@
         position: absolute;
         width: 834px;
     }
+    .left-side_social-links {
+        position: absolute;
+        left: 2%;
+    }
     .right-side_c {
         position: absolute;
         left: 550px;
@@ -182,6 +186,10 @@
         position: absolute;
         width: 820px;
     }
+    .left-side_social-links {
+        position: absolute;
+        left: 2%;
+    }
     .right-side_c {
         position: absolute;
         font-size: 14px;
@@ -200,7 +208,8 @@
         width: 768px;
     }
     ul {
-        left: 300px;
+        position: absolute;
+        left: 340px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -248,7 +257,7 @@
     }
     ul {
         display: grid;
-        left: 0;
+        left: 40px;
         margin-left: 200px;
     }
     .homepage {
@@ -269,7 +278,7 @@
         position: absolute;
         font-size: 10px;
         left: 450px;
-        top: 13px;
+        top: 40px;
     }
 }
 
@@ -283,8 +292,12 @@
 
         width: 480px;
     }
+    input[type="checkbox"], .mask {
+        visibility: visible;
+        left: 75%;
+    }
     ul {
-        left: -50px;
+        left: 0px;
     }
     .homepage {
         position: absolute;
@@ -319,7 +332,7 @@
         width: 430px;
     }
     ul {
-        left: -80px;
+        left: -40px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -336,7 +349,7 @@
     }
     .right-side_c {
         position: absolute;
-        left: 250px;
+        left: 260px;
     }
 }
 
@@ -350,7 +363,8 @@
         width: 412px;
     }
     ul {
-        left: -100px;
+        position: absolute;
+        left: -50px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -389,7 +403,7 @@
         width: 390px;
     }
     ul {
-        left: -110px;
+        left: -50px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -422,6 +436,9 @@
     nav {
         position: fixed;
         width: 385px;
+    }
+    ul {
+        left: -60px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -465,6 +482,10 @@
 }
 
 @media screen and (max-width: 384px){
+    .container {
+        width: 384px;
+        height: 640px;
+    }
     nav {
         position: fixed;
         width: 384px;
@@ -510,7 +531,7 @@
         width: 360px;
     }
     ul {
-        left: -120px;
+        left: -80px;
     }
     input[type="checkbox"], .mask {
         visibility: visible;
@@ -579,7 +600,7 @@
         width: 320px;
     }
     ul {
-        left: -150px;
+        left: -100px;
     }
     footer {
         position: absolute;
