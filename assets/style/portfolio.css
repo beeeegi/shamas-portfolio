@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-style: var(--sanfont);
+}
+
+:root {
+    --sanfont: 'Playfair Display', serif;;
+}
+
+html, body {
+    background-color: #000000;
+}
+
+
+.container {
+    width: 1440px;
+    height: 910px;
+
+    margin: 0 auto;
+}
+
+.portfolio-group {
+    position: relative;
+
+    width: 1200px;
+    height: 700px;
+
+    left: 10%;
+    top: 15%;
+
+    display: grid;
+}
+
+.projects {
+    position: relative;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(186px, 1fr));
+
+    left: 1.5%;
+    top: 30px;
+}
+
+.project1 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 15px;
+}
+
+.project1 img {
+    width: 350px;
+    height: 300px;
+
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.project1 img:hover {
+    border: 1px solid #C778DD;
+    scale: 1.1;
+}
+
+.project2 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 15px;
+}
+
+.project2 img {
+    width: 350px;
+    height: 300px;
+
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.project2 img:hover {
+    border: 1px solid #C778DD;
+    scale: 1.1;
+}
+
+.project3 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 15px;
+}
+
+.project3 img {
+    width: 350px;
+    height: 300px;
+
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.project3 img:hover {
+    border: 1px solid #C778DD;
+    scale: 1.1;
+}
+
+.project4 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 15px;
+}
+
+.project4 img {
+    width: 350px;
+    height: 300px;
+
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.project4 img:hover {
+    border: 1px solid #C778DD;
+    scale: 1.1;
+}
+
+.project5 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.project6 {
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+
+    color: white;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
