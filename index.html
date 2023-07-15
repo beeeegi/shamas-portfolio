@@ -4,68 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shama</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg">
 
-    <!-- Fontawesome & Text-font -->
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- fontawesome & Akaricons -->
     <script src="https://kit.fontawesome.com/3096dd31dc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&family=Montserrat:ital,wght@1,600&family=Playfair+Display:wght@900&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-    <!-- STYLE-CSS FILE -->
+
+    <!-- STYLE-CSS -->
     <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/nav.css">
+    <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/footer.css">
-    <link rel="stylesheet" href="assets/style/homeres.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Nav -->
-        <div class="mask"><i class="fa-solid fa-bars"></i></div>
-        <input type="checkbox">
-        <div class="left-side_logo-name">
-            <img src="assets/images/logo.svg">
-            <span>SHAMA</span>
+    <!-- Hamburger-nav // Header.css-->
+    <i class="fa-solid fa-bars" id="fa-bars"></i>
+    <input type="checkbox">
+    <!-- Header -->
+    <header id="header">
+        <div class="logo_name">
+            <h1>SHAMA</h1>
         </div>
-        <nav>   
+        <nav>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="assets/pages/skills.html"><li>Skills</li></a>
-                <a href="assets/pages/portfolio.html"><li>Portfolio</li></a>
+                <a href="#header"><li>Home</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="mailto:shama@begi.dev"><li>Contact</li></a>
             </ul>
         </nav>
-
-        <!-- Home Page -->
-        <div class="homepage">
-            <div class="left-side_home-page">
-                <h1>Shama <span>front-end developer,</span></h1>
-                <div class="mini-about">
-                    <p>crafts responsive websites where technologies meet creativity</p>
-                </div>
-                <a href="mailto:shama@begi.dev">
-                    <div class="contact_btn">
-                        <p>Mail</p>
-                    </div>
-                </a>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- AnchorLinks Jump Top -->
+        <div class="jump-top">
+            <a href="#header">
+                <button>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </a>
+        </div>
+        <!-- for-HamburgerNav -->
+        <div class="nav">
+            <ul>
+                <a href="https://github.com/shamsky777"><li>Github</li></a>
+                <a href="mailto:shama@begi.dev"><li>Contact</li></a>
+            </ul>
+        </div>
+        <!-- About-me -->
+        <div class="about-me" id="about-me">
+            <div class="leftside_about-me">
+                <h1>
+                    Shama <span>front-end<br>developer,</span><br>
+                    <span class="ptag">
+                        crafts responsive 
+                        websites where technologies 
+                        meet creativity
+                    </span>
+                </h1>
             </div>
-            <div class="right-side_home-page">
-                <img src="assets/images/coding.gif">
+            <div class="rightside_about-me">
+                <img src="assets/images/10 1.svg">
             </div>
         </div>
+        <!-- Skills -->
+        <div class="skills" id="skills">
+            <div class="leftside_skills">
+                <h1>Skills</h1>
+            </div>
+            <div class="rightside_skills">
+                <div class="cards">
+                    <div class="card1">
+                        <i class="fab fa-html5"></i>
+                        <h1>HTML</h1>
+                    </div>
+                    <div class="card2">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h1>CSS</h1>
+                    </div>
+                    <div class="card3">
+                        <i class="fa-brands fa-sass"></i>
+                        <h1>SASS</h1>
+                    </div>
+                    <div class="card4">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h1>JavaScript</h1>
+                    </div>
+                    <div class="card5">
+                        <i class="ai-github-fill"></i>
+                        <h1>Github</h1>
+                    </div>
+                    <div class="card6">
+                        <i class="fa-brands fa-figma"></i>
+                        <h1>Figma</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio -->
+        <div class="portfolio" id="portfolio">
+            <div class="top-text_portfolio">
+                <h1>Portfolio</h1>
+            </div>
+            <div class="portfolio_card1">
+                <div class="imgside_card1">
+                    <img src="assets/images/foodfarming.png">
+                </div>
+                <div class="aboutside_card1">
+                    <h1>Food Farming</h1>
+                    <br>
+                    <p>Landing Page Non-Responsive Websites</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://github.com/shamsky777/Food-Farming" target="_blank"><Button>More</Button></a>
+                </div>
+            </div>
+            <div class="portfolio_card2">
+                <div class="aboutside_card2">
+                    <h1>Ninja Mail</h1>
+                    <br>
+                    <p>Landing Page Responsive Website</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://github.com/shamsky777/NinjaMail" target="_blank"><button>More</button></a>
+                </div>
+                <div class="imgside_card2">
+                    <img src="assets/images/ninjamail.png">
+                </div>
+            </div>
+            <div class="portfolio_card3">
+                <div class="imgside_card3">
+                    <img src="assets/images/mobilelogin.png">
+                </div>
+                <div class="aboutside_card3">
+                    <h1>Mobile SignIn/SignUp</h1>
+                    <br>
+                    <p>Mobile Website</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://github.com/shamsky777/Mobile-SignIn-SignUp" target="_blank"><button>More</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="social_links">
+            <a href="https://github.com/shamsky777"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/shama.kkkk/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://dribbble.com/inhoboss"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="https://twitter.com/shamainhoboss"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="rightside_cc">
+            <p> 
+                © Copyright 2023. Made by Shama
+            </p>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer>
-            <div class="left-side_social-links">
-                <a href="https://github.com/shamsky777" target="_blank"><i class="fa-brands fa-github" title="Github"></i></a>
-                <a href="https://www.instagram.com/shama.kkkk/" target="_blank"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
-                <a href="https://twitter.com/shamainhoboss" target="_blank"><i class="fa-brands fa-twitter" title="Twitter"></i></a>
-                <a href="https://dribbble.com/inhoboss" target="_blank"><i class="fa-brands fa-dribbble" title="Dribble"></i></a>
-            </div>
-            <div class="right-side_c">
-                <span>© Copyright 2023. Made by Shama</span>
-            </div>
-        </footer>
-    </div>
-    <script src="assets/script/script.js"></script>
+    <script src="assets/scripts/nav.js"></script>
+
 </body>
 </html>
