@@ -1,0 +1,157 @@
+header {
+    position: relative;
+    
+    width: 100%;
+    height: 60px;
+
+    top: 0px;
+}
+
+.logo_name img {
+    width: 42px;
+    height: 42px;
+}
+
+.logo_name {
+    width: min(200px);
+
+    height: 60px;
+
+    
+    align-items: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+
+    gap: 12px;
+}
+
+/* Hamburger-nav */
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    ;
+
+    background-color: black;
+
+    display: none;
+}
+
+main .nav ul {
+    margin-top: 20%;
+}
+
+main .nav li {
+    border: none;
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+
+    margin-left: 90%;
+
+    display: none;
+}
+
+.fa-bars {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    background-color: white;
+    color: black;
+
+    font-size: 60px;
+    line-height: 60px;
+
+
+
+    border-radius: 5px;
+    pointer-events: none;
+    justify-content: center;
+
+    z-index: 2;
+    
+    margin-left: 90%;
+
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ main .nav {
+    display: flex;
+}
+
+input[type="checkbox"]:checked ~ footer {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ header {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ main .about-me {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ main .skills{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ main .portfolio{
+    display: none;
+}
+
+
+
+/* Nav */
+
+nav {
+
+    width: 530px;
+    height: 60px;
+
+    display: flex;
+    float: right;
+    align-items: center;
+
+    transition: 0.7s;
+}
+
+ul, li {
+    color: #fff;
+    list-style: none;
+    gap: 50px;
+
+    display: flex;
+    
+    font-size: 25px;
+}   
+
+li {
+    /* border: 1px solid gray; */
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+    transition: 0.5s;
+}
+
+li:hover {
+    color: black;
+    background-color: #cc6699;
+}
+
+ul:hover li {
+    filter: blur(2px);
+}
+
+ul li:hover {
+    filter: blur(0px);
+}
