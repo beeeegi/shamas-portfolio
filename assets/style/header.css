@@ -53,27 +53,25 @@ main .nav li {
 input[type="checkbox"] {
     position: absolute;
     
-    width: 60px;
-    height: 60px;
+    width: 25px;
+    height: 32px;
     z-index: 1;
 
     margin-left: 90%;
+    border: none;
+
 
     display: none;
 }
 
 .fa-bars {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 32px;
 
-    background-color: white;
+    background-color: purple;
     color: black;
 
-    font-size: 60px;
-    line-height: 60px;
-
-
+    font-size: 32px;
 
     border-radius: 5px;
     pointer-events: none;

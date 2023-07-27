@@ -64,6 +64,7 @@
     }
     input[type="checkbox"], .fa-bars {
         display: flex;
+        margin-top: 10px;
     }
     ul {
         /* margin-bottom: 270%; */
@@ -191,7 +192,8 @@
     }
     input[type="checkbox"], .fa-bars {
         display: flex;
-        margin-left: 80%;
+        margin-left: 90%;
+        margin-top: 10px;
     }
     .skills {
         position: relative;
