@@ -13,6 +13,7 @@
     --bgcolor: #111111;
     --cardscolor: #171515;
     --boxshadowcolor: #0e0e0e;
+    --aboutsidecolor: #2525256f;
 }
 
 html, body {
@@ -365,7 +366,7 @@ main {
     width: 500px;
     text-align: center;
 
-    background-color: var(--cardscolor);
+    background-color: var(--aboutsidecolor);
 }
 
 .aboutside_card1 h1{
@@ -379,7 +380,7 @@ main {
     border: 1px solid #cc6699;
     border-radius: 12px;
 
-    background-color: var(--cardscolor);
+    background-color: var(--aboutsidecolor);
 
     cursor: pointer;
 
@@ -415,7 +416,7 @@ main {
 
     float: left;
 
-    background-color: var(--cardscolor);
+    background-color: var(--aboutsidecolor);
 }
 
 .aboutside_card2 h1{
@@ -429,7 +430,7 @@ main {
     border: 1px solid #cc6699;
     border-radius: 12px;
 
-    background-color: var(--cardscolor);
+    background-color: var(--aboutsidecolor);
 
     cursor: pointer;
 
@@ -462,9 +463,9 @@ main {
     width: 500px;
     text-align: center;
 
-    background-color: var(--cardscolor);
-
-    box-shadow: 5px 10px var(--boxshadowcolor);
+    background-color: var(--aboutsidecolor);
+/* 
+    box-shadow: 5px 10px var(--boxshadowcolor); */
 }
 
 .aboutside_card3 h1{
@@ -478,7 +479,7 @@ main {
     border: 1px solid #cc6699;
     border-radius: 12px;
 
-    background-color: var(--cardscolor);
+    background-color: var(--aboutsidecolor);
 
     cursor: pointer;
 

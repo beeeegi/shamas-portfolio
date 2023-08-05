@@ -51,6 +51,9 @@
     main {
         width: 790px;
     }
+    .jump-top {
+        display: none;
+    }
     nav {
         display: none;
         width: 790px;
