@@ -322,3 +322,67 @@
         width: 414px;
     }
 }
+
+
+@media Screen and (max-width: 360px) {
+    main {
+        width: 360px;
+    }
+    html, body {
+        width: 360px;
+    }
+    .rightside_about-me{
+        display: none;
+    }
+    .about-me {
+        width: 360px;
+    }
+    .leftside_about-me {
+        width: 100%;
+    }
+    .rightside_about-me img{
+        display: none;
+    }
+    .skills {
+        width: 360px;
+    }
+    .cards {
+        width: 200px;
+    }
+    .rightside_skills {
+        width: 200px;
+    }
+    .portfolio {
+        width: 360px;
+    }
+    .top-text_portfolio {
+        width: 360px;
+    }
+    .portfolio_card1 {
+        width: 360px;
+    }
+    .portfolio_card1 img{
+        width: 360px;
+    }
+    .portfolio_card2 {
+        width: 360px;
+    }
+    .portfolio_card2 img{
+        width: 360px;
+    }
+    .portfolio_card3 {
+        width: 360px;
+    }
+    .portfolio_card3 img{
+        width: 360px;
+    }
+    footer {
+        width: 360px;
+    }
+    .rightside_cc {
+        float: right;
+    }
+    .rightside_cc p{
+        font-size: 8px;
+    }
+}
