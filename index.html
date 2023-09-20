@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/logo/logo.svg" type="image/x-icon">
+    <title>Shama's Portfolio</title>
+
+    <!-- Css & Bootstrap & SCSS -->
+    <link rel="stylesheet" href="assets/style/responsive.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/style/scrollanimation.css">
+    <link rel="stylesheet" href="assets/style/style.css">  
+    <link rel="stylesheet" href="assets/style/hamburger.css">  
+    
+    <!-- Font & Icons -->
+    <script src="https://kit.fontawesome.com/3096dd31dc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+
+    <!-- Script Js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/script/nav.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <div class="header_logoIMG">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="128.000000pt" height="128.000000pt" viewBox="0 0 128.000000 128.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+                fill="#dc3545" stroke="none">
+                <path d="M666 1159 c-3 -8 -62 -236 -132 -508 -121 -474 -125 -495 -108 -508
+                26 -19 60 -26 89 -19 18 5 27 16 34 44 5 20 64 246 131 501 137 521 134 490
+                41 499 -37 3 -52 1 -55 -9z"/>
+                <path d="M816 978 c-25 -29 -46 -56 -46 -60 0 -4 56 -70 125 -148 69 -78 125
+                -144 125 -147 0 -3 -57 -66 -126 -140 -69 -74 -124 -138 -122 -143 10 -29 85
+                -110 103 -110 13 0 85 66 208 190 103 105 187 195 187 200 0 5 -82 100 -181
+                210 -136 150 -187 200 -204 200 -16 0 -39 -18 -69 -52z"/>
+                <path d="M247 943 c-35 -43 -101 -123 -146 -177 -49 -59 -81 -107 -79 -118 2
+                -9 68 -99 147 -199 133 -166 146 -180 170 -174 27 6 101 79 101 99 0 6 -48 68
+                -105 138 -58 71 -105 133 -105 139 0 6 47 66 105 134 58 68 105 128 105 134 0
+                6 -19 32 -41 56 -60 64 -75 61 -152 -32z"/>
+                </g>
+                </svg>
+            </div>
+            <div class="header_logoText">
+                <h2>SHAMA</h2>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="navlist">
+                <a href="#home"><li><h5>Home</h1></li></a>
+                <a href="#skills"><li><h5>Skills</h1></li></a>
+                <a href="#portfolio"><li><h5>Portfolio</h1></li></a>
+                <a href="mailto:shama@begi.dev"><li><h5>Contact</h1></li></a>
+            </ul>
+
+            <!-- Hamburger Navigation -->
+
+            <div class="btn-group dropdown hamburger">
+                <button type="button" class="btn" style="border: none;" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars" style="width: 100%; height: 100%; font-size: 40px; color: red;"></i>
+                </button>
+                <ul class="dropdown-menu  mb-3 dropdownbg text-center" style="width: 20rem;">
+                    <!-- Dropdown menu links -->
+                    <a href="#home" class="list-item1 text-bg-primary" style="font-size: 30px; cursor: pointer;"><li><h5>Home</h5></li></a>
+                    <a href="#skills" class="list-item2 text-bg-primary" style="font-size: 30px; cursor: pointer;"><li><h5>Skills</h5></li></a>
+                    <a href="#portfolio" class="list-item3 text-bg-primary" style="font-size: 30px; cursor: pointer;"><li><h5>Portfolio</h5></li></a>
+                    <a href="milto:shama@begi.dev" class="list-item3 text-bg-primary" style="font-size: 30px; cursor: pointer;"><li><h5>Contact</h5></li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- section one -->
+        <section id="home" class="container section-one">
+            <div class="row row-cols-1" style="width: 100%;">
+                <div class="col d-flex hidden">
+                    <div class="section-one_leftside">
+                        <div class="section-one_leftside-text-area">
+                            <div class="section-one_leftside-topText">
+                                <h1>Shama front-end<br>
+                                    developer,
+                                </h1>
+                            </div>
+                            <div class="section-one_leftside-bottomText">
+                                <p>crafts responsive websites where technologies meet creativity </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-one_rightside">
+                        <img src="assets/images/illustartion-businessman-chairpose.png" alt="man is sitting on a chair">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section two -->
+        <section id="skills" class="container section-two d-block hidden">
+            <div class="section-two_top">
+                <h2>Skills</h2>
+            </div>
+            <div class="section-two_bottom">
+                <div class="section-two_bottom-skill-conainer">
+                    <div class="bottom-skill-html">
+                        <div class="htmlText">
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="bottom-skill-rightside-html">
+                            <h4>95%</h4>
+                        </div>
+                    </div>
+                    <div class="bottom-skill-css">
+                        <div class="cssText">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="bottom-skill-rightside-css">
+                            <h4>90%</h4>
+                        </div>
+                    </div>
+                    <div class="bottom-skill-js">
+                        <div class="jsText">
+                            <h4>js</h4>
+                        </div>
+                        <div class="bottom-skill-rightside-js">
+                            <h4>40%</h4>
+                        </div>
+                    </div>
+                    <div class="bottom-skill-bootstrap">
+                        <div class="bootstrapText">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="bottom-skill-rightside-bootstrap">
+                            <h4>80%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section id="portfolio" class="container section-three">
+    
+                <div id="carouselExampleIndicators" class="carousel slide hidden test">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner ">
+                      <div class="carousel-item active">
+                        <a href="https://github.com/shamsky777/NinjaMail" target="_blank"><img src="assets/images/ninjamail.png" class="d-block w-100" alt="ninjamail" style="width: 100%; height: 600px;"></a>
+                      </div>
+
+                      <div class="carousel-item" >
+                        <a href="https://github.com/shamsky777/Mobile-SignIn-SignUp" target="_blank"><img src="assets/images/mobilelogin.png" class="d-block w-100" alt="..." style="width: 100%; height: 600px;"></a>
+                      </div>
+
+                      <div class="carousel-item" >
+                        <a href="https://github.com/shamsky777/Food-Farming" target="_blank"><img src="assets/images/foodfarming.png" class="d-block w-100" alt="..." style="width: 100%; height: 600px;"></a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                      <span class="visually-hidden btn btn-outline-danger">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden btn btn-outline-danger">Next</span>
+                    </button>
+                  </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Leftside For Social -->
+        <div class="leftside_footer">
+            <!-- Github -->
+            <div class="githubIcon">
+                <a href="https://github.com/shamsky777" target="_blank">
+                    <img src="assets/images/github.png" alt="">
+                </a>
+            </div>
+            <!-- Linkedin -->
+            <div class="linkedinIcon">
+                <a href="https://www.linkedin.com/in/shamainhoboss/" target="_blank">
+                    <img src="assets/images/linkedin.png" alt="">
+                </a>
+            </div>
+            <!-- Instagram -->
+            <div class="instagramIcon">
+                <a href="https://www.instagram.com/shama.kkkk/" target="_blank">
+                    <img src="assets/images/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- Rightside For C -->
+        <div class="rightside_footer">
+            <p>
+                © Copyright 2023. Made by Shama
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap -->
+    <script src="assets/script/bootstrap.bundle.min.js"></script>
+    <!-- ScrollAnimation -->
+    <script src="assets/script/scrollanimation.js"></script>
+</body>
+</html>

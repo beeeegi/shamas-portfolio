@@ -1,0 +1,453 @@
+@import url(root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+:root {
+    /* Color */
+
+    --BackgroundColor: #111111;
+    --TextColor: rgb(220, 53, 69);
+    --ParagraphColor: #f8f9fa;
+    --cardebis-background: #1e1e1e;
+
+    /* Text Font */
+
+    --sectionOneFont: font-family: 'Shadows Into Light', cursive;
+
+    /* skillTextBackgroundColor */
+    --htmlTextBackgrondColor: #995003;
+    --cssTextBackgroundColor:   #055482;
+    --jsTextBackgroundColor: #e2b902;
+    --bootstrapTextBackgroundColor: #3e02e5;
+
+}
+
+html {
+    scroll-behavior:smooth
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--BackgroundColor);
+}
+
+/* Header & Header_Logo & Navigation */
+
+.header {   
+    width: 100%;
+    height: 60px;
+
+    z-index: 99;
+    font-style: var(--headerText);
+    font-weight: 400;
+}
+
+/* Header_Logo */
+
+.header_logo {
+    width: 200px;
+    height: 48px;
+
+    display: flex;
+    float: left;
+
+    margin: 5px 0px 0px 34px;
+}
+
+.header_logo > .header_logoIMG svg {
+    width: 48px;
+    height: 48px;
+}
+
+.header_logo > .header_logoText h2 {
+    color: var(--TextColor);
+    padding: 5px;
+    margin-left: 10px;
+    font-family: 'Rubik Iso', cursive;
+}
+
+/* Navigation */
+
+.nav {
+    width: 500px;
+    height: 60px;
+
+    float: right;
+}
+
+ul, li {
+    display: flex;
+    gap: 34px;
+    padding-top: 7px;
+
+    color: var(--TextColor);
+
+    margin-left: 10px;
+}
+
+li {
+    background: linear-gradient(red 0 0) bottom/0% 1px no-repeat;
+    transition: 1s all;
+}
+
+li:hover {
+    background-size: 100% 1.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.dropdownbg {
+    background-color: rgb(28, 28, 28);
+    transition: ease all 0.5s;
+}
+
+
+/* Main Section One*/
+
+.section-one {
+    position: relative;
+    height: 600px;
+
+    display: flex;
+    margin-top: 300px;
+}
+
+.section-one_leftside {
+    width: 50%;
+    height: 600px;
+
+    font-family: var(--sectionOneFont);
+}
+
+.section-one_leftside-text-area {
+    width: 80%;
+    height: 400px;
+
+    margin: 0 auto;
+    margin-top: 100px;
+
+    color: var(--TextColor);
+}
+
+.section-one_leftside-topText {
+    width: 80%;
+    height: 100px;
+
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.section-one_leftside-bottomText {
+    width: 80%;
+    height: 100px;
+
+    margin-left: 5%;
+    margin-top: 50px;
+
+    color: var(--ParagraphColor);
+}
+
+.section-one_leftside-bottomText > p {
+    font-size: 13px;
+}
+
+.section-one_rightside {
+    width: 50%;
+    height: 600px;
+
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+}
+
+.section-one_rightside > img {
+    width: 100%;
+    height: 600px;
+    animation: buisinessman 5s infinite;
+}
+
+/* Main Section Two */
+
+.section-two {
+    position: relative;
+    height: 600px;
+
+    margin-top: 300px;
+}
+
+.section-two_top {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two_top > h2 {
+    color: var(--TextColor);
+    animation: animation 5s infinite;
+}
+
+.section-two_bottom {
+    width: 100%;
+    height: 500px;
+    
+}
+
+.section-two_bottom-skill-conainer {
+    width: 600px;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.bottom-skill-html {
+    border: 1px solid var(--htmlTextBackgrondColor);
+    width: 90%;
+    height: 50px;
+
+    margin-left: 15px;
+    margin-top: 50px;
+
+    display: flex;
+    border-radius: 12px;
+}
+
+.htmlText {
+    width: 120px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--htmlTextBackgrondColor);
+    color: var(--ParagraphColor);
+    border-radius: 12px 0px 0px 12px ;
+}
+
+.bottom-skill-rightside-html {
+    width: 100%;
+    background: linear-gradient(90deg, #b7670c 95%, transparent 0%);
+}
+
+.bottom-skill-rightside-html > h4{
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: var(--ParagraphColor);
+}
+
+.bottom-skill-css {
+    border: 1px solid var(--cssTextBackgroundColor);
+    width: 90%;
+    height: 50px;
+
+    margin-left: 15px;
+    margin-top: 50px;
+    display: flex;
+    border-radius: 12px;
+}
+
+.cssText {
+    width: 120px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cssTextBackgroundColor);
+    color: var(--ParagraphColor);
+    border-radius: 12px 0px 0px 12px ;
+}
+
+.bottom-skill-rightside-css {
+    width: 100%;
+    background: linear-gradient(90deg, #013563 90%, transparent 0%);
+}
+
+.bottom-skill-rightside-css > h4{
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: var(--ParagraphColor);
+}
+
+.bottom-skill-js {
+    border: 1px solid var(--jsTextBackgroundColor);
+    width: 90%;
+    height: 50px;
+
+    margin-left: 15px;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.jsText {
+    width: 120px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--jsTextBackgroundColor);
+    color: var(--ParagraphColor);
+    border-radius: 12px 0px 0px 12px ;
+}
+
+.bottom-skill-rightside-js {
+    width: 100%;
+    background: linear-gradient(90deg, #d3c504 40%, transparent 0%);
+}
+
+.bottom-skill-rightside-js > h4{
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: var(--ParagraphColor);
+}
+
+.bottom-skill-bootstrap {
+    border: 1px solid var(--bootstrapTextBackgroundColor);
+    width: 90%;
+    height: 50px;
+
+    margin-left: 15px;
+    margin-top: 50px;
+    display: flex;
+    border-radius: 12px;
+}
+
+.bootstrapText {
+    width: 120px;
+    height: 100%;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bootstrapTextBackgroundColor);
+    color: var(--ParagraphColor);
+    border-radius: 12px 0px 0px 12px ;
+}
+
+.bottom-skill-rightside-bootstrap {
+    width: 100%;
+    background: linear-gradient(90deg, #3301bc 75%, transparent 0%);
+}
+
+.bottom-skill-rightside-bootstrap > h4{
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    color: var(--ParagraphColor);
+}
+
+/* Main Section Three */
+
+.section-three {
+    position: relative;
+    height: 600px;
+
+    margin-bottom: 300px;
+    margin-top: 300px;
+    object-fit: cover;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 80px;
+}
+
+.leftside_footer {
+        float: left;
+    width: 230px;
+    height: 48px;
+
+    margin-top: 20px;
+    margin-left: 34px;
+    gap: 34px;
+    display: flex;
+}
+
+
+.githubIcon {
+    width: 80px;
+    height: 48px;
+}
+
+.githubIcon img {
+    width: 100%;
+    height: 48px;
+}
+
+.linkedinIcon {
+    width: 80px;
+    height: 48px;
+}
+
+.linkedinIcon img {
+    width: 100%;
+    height: 48px;
+}
+
+.instagramIcon {
+    width: 80px;
+    height: 48px;
+}
+
+.instagramIcon img {
+    width: 100%;
+    height: 48px;
+}
+
+.rightside_footer {
+    float: right;
+
+    margin-top: 20px;
+    margin-right: 34px;
+}
+
+.rightside_footer > p {
+    color: var(--ParagraphColor);
+}

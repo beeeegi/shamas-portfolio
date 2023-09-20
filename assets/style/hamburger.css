@@ -1,0 +1,29 @@
+@media (max-width: 768px){
+    .nav {
+        width: 60px;
+    }
+    nav > .navlist  {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    @keyframes animation {
+        0%, 100%, 50% {
+            transform: translateY(0px);
+        }
+    }
+}
+
+/* Fotos animaciebi */
+
+@media (min-width: 768px) {
+    @keyframes animation {
+        0%, 100%{
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+    }
+}
