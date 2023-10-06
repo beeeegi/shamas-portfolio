@@ -1,19 +1,50 @@
+@media (max-width: 1387px) {
+    .card {
+        width: 90%;
+    }
+    .card-button {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 1206px) {
     .section-one_leftside-topText > h1 {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width: 985px) {
-
+@media (max-width: 1000px) {
+    .section-three {
+        grid-template-columns: repeat(2, auto);
+        height: 1000px;
+    }
+    .card {
+        width: 95%;
+        height: 300px;
+    }
 }
 
 @media (max-width: 768px) {
+    .section-one_leftside {
+        position: absolute;
+    }
+    .section-one_rightside {
+        width: 100%;
+        
+    }
     .section-one_leftside-topText > h1 {
         font-size: 1rem;
     }
     .section-two_bottom-skill-conainer {
         width: 90% !important;
+    }
+    .section-three {
+        grid-template-columns: repeat(1, auto);
+        height: 3000px;
+    }
+    .card {
+        margin-left: 30px;
     }
 }
 
@@ -29,3 +60,14 @@
         display: none;
     }
 }
+
+@media (max-width: 1387px) {
+    .card {
+        width: 90%;
+    }
+    .card-button {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+

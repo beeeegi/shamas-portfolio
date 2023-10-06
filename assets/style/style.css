@@ -15,6 +15,7 @@
     --TextColor: rgb(220, 53, 69);
     --ParagraphColor: #f8f9fa;
     --cardebis-background: #1e1e1e;
+    --sourceCodeColor: #f65c5c;
 
     /* Text Font */
 
@@ -97,6 +98,7 @@ ul, li {
 li {
     background: linear-gradient(red 0 0) bottom/0% 1px no-repeat;
     transition: 1s all;
+    cursor: pointer;
 }
 
 li:hover {
@@ -105,6 +107,7 @@ li:hover {
 
 a {
     text-decoration: none;
+    cursor: default;
 }
 
 .hamburger {
@@ -380,23 +383,76 @@ a {
 
     margin-bottom: 300px;
     margin-top: 300px;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 15px 20px;
+    gap: 20px;
 }
 
-
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.card {
+    width: 400px;
+    background: var(--cardebis-background);
+    border-radius: 15px;
 }
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.card-img {
+    width: 100%;
+    height: 170px;
+
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid white;
 }
 
+.card-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-left: 7px;
+    color: var(--TextColor);
+}
+
+.card-source-code {
+    margin-left: 7px;
+    cursor: default;
+    width: 100px;
+}
+
+.card-source-code > span {
+    color: var(--sourceCodeColor);
+    cursor: pointer;
+}
+
+.card-button {
+    border: 1px solid black;
+    width: 100px;
+    height: 25px;
+
+    margin-top: 10px;
+    margin-left: 7px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--ParagraphColor);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.card-button:hover {
+    width: 140px;
+}
 /* Footer */
 
 .footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 2.5rem; 
 }
 
 .leftside_footer {
