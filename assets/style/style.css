@@ -476,14 +476,8 @@ a {
     display: flex;
 }
 
-
 .githubIcon {
     width: 80px;
-    height: 48px;
-}
-
-.githubIcon img {
-    width: 100%;
     height: 48px;
 }
 
@@ -492,19 +486,15 @@ a {
     height: 48px;
 }
 
-.linkedinIcon img {
-    width: 100%;
-    height: 48px;
-}
-
 .instagramIcon {
     width: 80px;
     height: 48px;
 }
 
-.instagramIcon img {
+.socialLinks img{
     width: 100%;
     height: 48px;
+    cursor: pointer;
 }
 
 .rightside_footer {
@@ -516,4 +506,27 @@ a {
 
 .rightside_footer > p {
     color: var(--ParagraphColor);
+}
+
+
+/*For webkit-based browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #888;
+    background-color: #DC3545; 
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
