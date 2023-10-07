@@ -16,6 +16,7 @@
     --ParagraphColor: #f8f9fa;
     --cardebis-background: #1e1e1e;
     --sourceCodeColor: #f65c5c;
+    --ShadowBoxColor: #303030;
 
     /* Text Font */
 
@@ -393,6 +394,12 @@ a {
     width: 400px;
     background: var(--cardebis-background);
     border-radius: 15px;
+    box-shadow: 10px 10px 20px -2px var(--ShadowBoxColor);
+    transition: all ease 0.5s;
+}
+
+.card:hover {
+    scale: 1.06;
 }
 
 .card-img {
@@ -446,6 +453,9 @@ a {
 .card-button:hover {
     width: 140px;
 }
+
+
+
 /* Footer */
 
 .footer {

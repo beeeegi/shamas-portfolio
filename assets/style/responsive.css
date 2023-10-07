@@ -59,15 +59,11 @@
     .rightside_footer > p {
         display: none;
     }
-}
-
-@media (max-width: 1387px) {
+    .leftside_footer {
+        float: none;
+        margin: 0 auto;
+    }
     .card {
         width: 90%;
     }
-    .card-button {
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
 }
-
