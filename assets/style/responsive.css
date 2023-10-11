@@ -28,6 +28,7 @@
 @media (max-width: 768px) {
     .section-one_leftside {
         position: absolute;
+        width: 100%;
     }
     .section-one_rightside {
         width: 100%;
@@ -44,7 +45,8 @@
         height: 3000px;
     }
     .card {
-        margin-left: 30px;
+        margin-left: 5%;
+        width: 88%;
     }
 }
 
@@ -52,6 +54,9 @@
     .rightside_footer > p {
         font-size: 10px;
         margin-top: 10px;
+    }
+    .card {
+        width: 90%;
     }
 }
 
@@ -62,8 +67,5 @@
     .leftside_footer {
         float: none;
         margin: 0 auto;
-    }
-    .card {
-        width: 90%;
     }
 }
